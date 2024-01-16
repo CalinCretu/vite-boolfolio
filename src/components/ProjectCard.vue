@@ -30,8 +30,6 @@ export default {
   display: flex;
   flex-direction: column;
 
-
-
   .card-title {
     margin-bottom: 10px;
     border-bottom: 3px solid rgb(191, 197, 38);
@@ -44,7 +42,8 @@ export default {
   .technologies {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    font-size: 15px;
+    font-size: 12px;
+    color: rgb(77, 77, 77);
   }
 }
 

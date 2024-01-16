@@ -5,6 +5,12 @@
   font-family: 'Just Another Hand', cursive;
 }
 
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
   color: currentColor;

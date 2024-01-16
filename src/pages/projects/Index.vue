@@ -4,7 +4,8 @@ import ProjectCard from '../../components/ProjectCard.vue';
 
 export default {
   components: {
-    ProjectCard
+    ProjectCard,
+
   },
   data() {
     return {
@@ -30,11 +31,9 @@ export default {
   <div class="container">
     <div class="cards">
       <div class="title">
-        <a href="#">
-          <h1>
-            Our latest Projects!!!
-          </h1>
-        </a>
+        <h3>
+          Our latest Projects!!!
+        </h3>
       </div>
       <div class="grid">
         <ProjectCard class="card project-card" v-for="project in projects" :project="project" key="project.id" />
@@ -58,12 +57,6 @@ export default {
     top: -5%;
     color: rgb(239, 216, 216);
     rotate: -2deg;
-  }
-
-  .title:hover {
-    color: white;
-    rotate: 0deg;
-    transform: scale(1.15);
   }
 
   .cards {
