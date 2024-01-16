@@ -28,13 +28,17 @@ export default {
 
 <template>
   <div class="container">
-    <h1>
-      Our latest Projects
-    </h1>
-  </div>
-  <div class="container">
-    <div class="grid">
-      <ProjectCard class="card project-card" v-for="project in projects" :project="project" key="project.id" />
+    <div class="cards">
+      <div class="title">
+        <a href="#">
+          <h1>
+            Our latest Projects!!!
+          </h1>
+        </a>
+      </div>
+      <div class="grid">
+        <ProjectCard class="card project-card" v-for="project in projects" :project="project" key="project.id" />
+      </div>
     </div>
   </div>
 </template>
@@ -42,12 +46,53 @@ export default {
 <style lang="scss">
 .container {
 
-  margin: 10px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-  .grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(4, 1fr);
+  .title {
+    margin: 40px 0px;
+    position: absolute;
+    top: -5%;
+    color: rgb(239, 216, 216);
+    rotate: -2deg;
+  }
+
+  .title:hover {
+    color: white;
+    rotate: 0deg;
+    transform: scale(1.15);
+  }
+
+  .cards {
+    background-image: url(../public/images/pinboard.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 758px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 20px 15px black;
+    position: relative;
+
+    .grid {
+      display: grid;
+      text-align: center;
+      justify-content: center;
+      gap: 70px;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: end;
+      max-width: 1000px;
+
+      .project-card {
+        width: 200px;
+      }
+    }
   }
 }
 </style>
