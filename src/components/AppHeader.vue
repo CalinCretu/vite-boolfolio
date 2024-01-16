@@ -13,6 +13,9 @@ export default {
             <router-link :to="{ name: 'home' }">Home</router-link>
           </li>
           <li class="nav-links">
+            <router-link :to="{ name: 'contacts' }">Contacts</router-link>
+          </li>
+          <li class="nav-links">
             <router-link :to="{ name: 'projects.index' }">Portfolio</router-link>
           </li>
         </ul>
@@ -28,11 +31,12 @@ nav {
 
   .header-navbar {
     display: flex;
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
+    gap: 60px;
     position: absolute;
-    justify-content: space-between;
-    width: 1600px;
-    margin-top: 20px;
+    left: 10%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
     a:hover {
       color: white;
