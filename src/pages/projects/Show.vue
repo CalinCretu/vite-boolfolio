@@ -14,8 +14,13 @@ export default {
     fetchProject() {
       axios.get(`${this.BASE_URL}/projects/${this.slug}`)
         .then(res => {
-          console.log(res.data.project)
+          // console.log(res.data.project)
           this.project = res.data.project
+        })
+        .catch((error) => {
+          if (error.response.status === 404) {
+            this.$router.push({ name: 'not-found' })
+          }
         })
     }
   },
@@ -29,7 +34,7 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div v-if="project" class="container">
     <div class="pinboard-container">
       <h1 class="title">Details!!!</h1>
       <div class="card card-project details">
