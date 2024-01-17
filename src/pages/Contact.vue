@@ -40,11 +40,11 @@ export default {
     width: 600px;
     height: 600px;
 
-
     .form {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: 40px;
 
       input,
       textarea {
