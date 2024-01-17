@@ -14,7 +14,7 @@ export default {
     fetchProject() {
       axios.get(`${this.BASE_URL}/projects/${this.slug}`)
         .then(res => {
-          // console.log(res.data.project)
+          console.log(res.data.project)
           this.project = res.data.project
         })
     }
