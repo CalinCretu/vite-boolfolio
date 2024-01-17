@@ -30,9 +30,10 @@ export default {
   .title {
     margin: 40px 0px;
     position: absolute;
-    top: -7%;
+    top: -4%;
     color: rgb(239, 216, 216);
     rotate: -2deg;
+    font-size: 18px;
   }
 
   .card.card-project {

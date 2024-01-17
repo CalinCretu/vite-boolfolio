@@ -29,7 +29,7 @@ export default {
 
 <template>
   <div class="container">
-    <div class="cards">
+    <div class="pinboard-container">
       <div class="title">
         <h3>
           Our latest Projects!!!
@@ -54,19 +54,18 @@ export default {
   .title {
     margin: 40px 0px;
     position: absolute;
-    top: -5%;
+    top: -4%;
     color: rgb(239, 216, 216);
     rotate: -2deg;
   }
 
-  .cards {
+  .pinboard-container {
     background-image: url(../public/images/pinboard.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 1000px;
-    height: 758px;
-    margin: 30px;
+    width: 1200px;
+    height: 900px;
     display: flex;
     align-items: center;
     justify-content: center;

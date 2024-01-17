@@ -13,10 +13,10 @@ export default {
             <router-link :to="{ name: 'home' }">Home</router-link>
           </li>
           <li class="nav-links">
-            <router-link :to="{ name: 'contacts' }">Contacts</router-link>
+            <router-link :to="{ name: 'projects.index' }">Portfolio</router-link>
           </li>
           <li class="nav-links">
-            <router-link :to="{ name: 'projects.index' }">Portfolio</router-link>
+            <router-link :to="{ name: 'contacts' }">Contacts</router-link>
           </li>
         </ul>
       </nav>
@@ -37,6 +37,7 @@ nav {
     left: 10%;
     top: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 
     a:hover {
       color: white;

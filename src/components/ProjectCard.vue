@@ -19,6 +19,7 @@ export default {
       </span>
     </p>
     <p v-else>N.a.</p>
+    <router-link class="router-link" :to="{ name: 'projects.show', params: { slug: project.slug } }">More...</router-link>
   </div>
 </template>
 
@@ -44,6 +45,15 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     font-size: 12px;
     color: rgb(77, 77, 77);
+    flex-grow: 1;
+  }
+
+  .router-link {
+    color: green;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 

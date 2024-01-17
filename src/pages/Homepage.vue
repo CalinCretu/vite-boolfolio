@@ -15,7 +15,7 @@ export default {
 <template>
   <div class="container">
     <div class="pinboard-container">
-      <div class="card card-project">
+      <div class="card-name card card-project">
         <h1>{{ title }}</h1>
         <h2>{{ jobTitle }}</h2>
       </div>
@@ -34,19 +34,18 @@ export default {
 
 .pinboard-container {
   background-image: url(../public/images/pinboard.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 1000px;
-  height: 758px;
-  margin: 30px;
+  width: 1200px;
+  height: 900px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 10px 20px 15px black;
   position: relative;
 
-  .card.card-project {
+  .card.card-name {
     align-items: center;
     justify-content: center;
     width: 300px;
